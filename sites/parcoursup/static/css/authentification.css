@@ -1,0 +1,122 @@
+main#content {
+    min-height: 100vh !important;
+}
+.text-align-center {
+	text-align: center;
+}
+
+/* FRISE DU SITE STATIQUE*/
+.fr-frise__section {
+    padding-top: 1.25rem;
+    padding-bottom: 3rem;
+    background: #000091 url("../img/recupDSFR/bg-md-frise.svg") 100% 0% no-repeat;
+}
+
+.fr-frise__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    position: relative;
+}
+
+.fr-frise__item {
+    padding-left: 2.75rem;
+    padding-right: 5.25rem;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.fr-frise {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    height: 100%;
+}
+
+.fr-frise__title {
+    color: #fff;
+}
+
+.fr-frise__title em {
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.6666;
+    font-style: normal;
+    display: block;
+}
+
+.fr-frise__pictogram {
+    display: none;
+}
+
+.fr-frise__item .fr-icon-arrow-right-s-line {
+    background: #fff;
+    color: #000091;
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    width: 1rem;
+    display: flex;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+ul.fr-frise__list .fr-link, ol .fr-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.1875rem;
+}
+
+.fr-frise__title a {
+    color: inherit;
+}
+
+@media (min-width: 48em){
+	ul.fr-frise__list .fr-link, ol .fr-link {
+	    display: inline;
+	    padding-bottom: 0;
+	}
+}
+
+@media (min-width: 62em){
+	.fr-frise__section {
+	    padding-top: 1.1875rem;
+	    padding-bottom: 1.125rem;
+	    background: #000091 url("https://authentification.parcoursup.fr/Authentification/static/img/recupDSFR/bg-lg-frise.svg") 100% 50% no-repeat;
+	}
+	.fr-frise__list {
+	    gap: 1rem;
+	    flex-direction: row;
+	    align-items: initial;
+	}
+	
+	.fr-frise__item {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	
+	.fr-frise__pictogram {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    min-width: 2.5rem;
+	}
+	
+	.fr-frise__pictogram .fr-artwork {
+	    max-height: 4.25rem;
+	    width: auto;
+	    height: auto;
+	}
+	
+	.fr-frise__item .fr-icon-arrow-right-s-line {
+	    display: none;
+	}
